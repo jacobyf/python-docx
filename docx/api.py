@@ -84,8 +84,7 @@ class Document(object):
         is often the case.
         """
         run = self.add_paragraph().add_run()
-        picture = run.add_picture(image_path_or_stream, width, height)
-        return picture
+        return run.add_picture(image_path_or_stream, width, height)
 
     def add_section(self, start_type=WD_SECTION.NEW_PAGE):
         """
